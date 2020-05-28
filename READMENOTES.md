@@ -110,6 +110,8 @@ names as keys, but warning is new syntax so not used here
 - handles unregistering of listeners via the function returned by subscribe(listener)
 - import reducers that were combined via combineReducers() and pass to createStore()
 
+### testing the program works even without UI
+
 ## further reading
 for how to structure actions
 https://github.com/redux-utilities/flux-standard-action
