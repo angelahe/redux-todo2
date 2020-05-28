@@ -55,7 +55,22 @@ x - delete
 - for sending payloads of information from your application to your store using store.dispatch 
 - plain javascript
 - must have a type property
+- initiate a dispatch by passing the result of an action to the dispatch function
+- describe what happened but not how the app state changes
 
+e.g. 
+dispatch(addTodo(text))
+dispatch(completeTodo(index))
+OR
+- create a bound action creator that automatically dispatches
+e.g. 
+const boundAddTodo = text => dispatch(addTodo(text))
+const boundCompleteTodo = index => dispatch(completeTodo(index))
+VIA
+store.dispatch() but more likely with connect()
+
+### reducers
+- specify how the application state changes in response to actions sent to the store
 
 ## further reading
 for how to structure actions
