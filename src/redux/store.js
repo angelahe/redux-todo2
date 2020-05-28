@@ -1,0 +1,6 @@
+// src/redux/store.js
+
+import { createStore } from 'redux'
+import todoApp from './reducers'
+
+const store = createStore(todoApp)

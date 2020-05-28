@@ -99,7 +99,16 @@ function reducer(state = {}, action) {
   }
 }
 - can put all top level reducers into a separate file, export each reducer function, and use import * as reducers to get them as an object with their
-names as keys
+names as keys, but warning is new syntax so not used here
+- use combineReducers() to combine several reducers into one
+
+### store
+- holds application state
+- allows access to state via getState();
+- allows state to be updated via dispatch(action);
+- registers listeners via subscribe(listener);
+- handles unregistering of listeners via the function returned by subscribe(listener)
+- import reducers that were combined via combineReducers() and pass to createStore()
 
 ## further reading
 for how to structure actions
