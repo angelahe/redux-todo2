@@ -9,11 +9,6 @@ import {
 /* es6 object destructure to declare SHOW_ALL */
 const { SHOW_ALL } = VISIBILITY_FILTERS
 
-const initialState = {
-  visibilityFilter: VISIBILITY_FILTERS.SHOW_ALL,
-  todos: []
-}
-
 
 /* add after stage 5 below */
 function visibilityFilter(state = SHOW_ALL, action) {
