@@ -1,7 +1,6 @@
 // src/recux/actions.js
 
 import { ADD_TODO, TOGGLE_TODO, SET_VISIBILITY_FILTER } from "./actionTypes";
-//import { VISIBILITY_FILTERS } from "../constants";
 
 /*
  * action creators
@@ -18,4 +17,3 @@ export function toggleTodo(index) {
 export function setVisibilityFilter(filter) {
   return { type: SET_VISIBILITY_FILTER, filter }
 }
-
