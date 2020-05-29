@@ -1,6 +1,8 @@
 # todo-redux2
 basic tutorial from redux.js.org (vanilla)
 https://redux.js.org/basics/basic-tutorial
+then add react to it
+https://redux.js.org/basics/example
 
 ## setup
 ```
