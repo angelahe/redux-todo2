@@ -7,12 +7,9 @@ import {
 } from "../actionTypes";
 
 import { VISIBILITY_FILTERS } from "../../constants";
-/* es6 object destructure to declare SHOW_ALL */
-const { SHOW_ALL } = VISIBILITY_FILTERS
-
 
 /* add after stage 5 below */
-function visibilityFilter(state = SHOW_ALL, action) {
+const visibilityFilter = (state = VISIBILITY_FILTERS.SHOW_ALL, action) => {
   switch (action.type) {
     case SET_VISIBILITY_FILTER:
       return action.filter
