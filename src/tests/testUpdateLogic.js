@@ -1,9 +1,11 @@
 import {
   addTodo,
   toggleTodo,
-  setVisibilityFilter,
-  VisibilityFilters
-} from '../redux/actions'
+  setVisibilityFilter
+} from './redux/actions'
+
+import { VISIBILITY_FILTERS } from "./constants";
+import store from "./redux/store"
 
 // Log the initial state
 console.log(store.getState())
@@ -18,7 +20,7 @@ store.dispatch(addTodo('Learn about reducers'))
 store.dispatch(addTodo('Learn about store'))
 store.dispatch(toggleTodo(0))
 store.dispatch(toggleTodo(1))
-store.dispatch(setVisibilityFilter(VisibilityFilters.SHOW_COMPLETED))
+store.dispatch(setVisibilityFilter(VISIBILITY_FILTERS.SHOW_COMPLETED))
 
 // Stop listening to state updates
 unsubscribe()
