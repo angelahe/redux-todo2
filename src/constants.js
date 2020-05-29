@@ -1,5 +1,5 @@
 export const VISIBILITY_FILTERS = {
-  ALL: "all",
-  COMPLETED: "completed",
-  INCOMPLETE: "incomplete"
+  SHOW_ALL: 'SHOW_ALL',
+  SHOW_COMPLETED: 'SHOW_COMPLETED',
+  SHOW_ACTIVE: 'SHOW_ACTIVE'
 };

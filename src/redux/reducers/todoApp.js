@@ -1,11 +1,12 @@
-import { combineReducers } from 'redux'
-import {
-  ADD_TODO,
-  TOGGLE_TODO,
-  SET_VISIBILITY_FILTER,
-  VISIBILITY_FILTERS
-} from './actions'
+import { combineReducers } from "redux"
 
+import {
+  ADD_TODO, 
+  TOGGLE_TODO,
+  SET_VISIBILITY_FILTER
+} from "../actionTypes";
+
+import { VISIBILITY_FILTERS } from "../../constants";
 /* es6 object destructure to declare SHOW_ALL */
 const { SHOW_ALL } = VISIBILITY_FILTERS
 
@@ -193,7 +194,7 @@ combine the reducers that live in separate files
 const todoApp = combineReducers({
   visibilityFilter,
   todos
-})
+});
 
 export default todoApp
 

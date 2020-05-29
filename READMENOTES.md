@@ -111,6 +111,9 @@ names as keys, but warning is new syntax so not used here
 - import reducers that were combined via combineReducers() and pass to createStore()
 
 ### testing the program works even without UI
+put in index.js
+
+## 
 
 ## further reading
 for how to structure actions
